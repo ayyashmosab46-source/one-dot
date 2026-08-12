@@ -1,0 +1,126 @@
+{
+  "project": "One Dot Coffee Shop - Premium Brand Website",
+  "theme": "dark",
+  "archetype": "ARCHETYPE 5: LUXURY (Premium, Depth, Mystery)",
+  "typography": {
+    "headings": {
+      "english": "Playfair Display, serif",
+      "arabic": "Cairo, sans-serif",
+      "weights": "300, 400, 600, 700",
+      "style": "tracking-tight, leading-none for hero headers."
+    },
+    "body": {
+      "english": "Manrope, sans-serif",
+      "arabic": "Tajawal, sans-serif",
+      "weights": "300, 400, 500",
+      "style": "tracking-wide for small labels (tracking-[0.2em]), leading-relaxed for body."
+    },
+    "rules": "H1 max size is text-6xl. Use explicit weights (font-light or font-black) to avoid default bold. For bilingual support, use HTML 'dir' attribute and conditionally swap font families based on language."
+  },
+  "colors": {
+    "background": {
+      "base": "#050505",
+      "surface": "#12100E",
+      "card": "#1A1715"
+    },
+    "text": {
+      "primary": "#F4F0EB",
+      "secondary": "#A39E99",
+      "muted": "#6E6864"
+    },
+    "accent": {
+      "gold": "#D4AF37",
+      "gold_muted": "#B59530",
+      "coffee_warm": "#4A3320"
+    },
+    "rules": "Never use pure black #000000. Tint backgrounds with a warm coffee hue (#12100E). Use Gold sparingly for CTAs, lines, and active states."
+  },
+  "visual_enhancers": {
+    "surfaces": "Glassmorphism with heavy blur (backdrop-blur-2xl) and a delicate 1px border (border-white/10). Solid flat backgrounds for cards with no drop-shadows, just 1px border-white/5.",
+    "textures": "Subtle grain overlay across the entire site to prevent digital flatness.",
+    "hover_states": "Hovering on cards should slightly lift them and increase border opacity from 5% to 15%."
+  },
+  "layouts": {
+    "hero": "Full screen (h-screen) with a dark cinematic image. Overlay: bg-black/40. Stats placed at the bottom.",
+    "menu_bento": "Grid cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6. Each product card has a large top image (h-64 object-cover) and text below. No traditional text-only lists.",
+    "signature": "Massive images spanning at least col-span-2 in a grid, or full viewport height sticky sections. Massive typography numbering '01', '02', '03'.",
+    "gallery": "Horizontal scrolling container (overflow-x-auto snap-x) with hide-scrollbar class. Images should be tall and cinematic.",
+    "location": "Bento style. Large map spanning 2 columns, address and hours in 1 column."
+  },
+  "components": {
+    "buttons": "Pill-shaped (rounded-full). Primary: bg-[#D4AF37] text-black hover:bg-[#B59530]. Secondary/Outline: border border-white/20 text-[#F4F0EB] hover:bg-white/10.",
+    "tabs": "For menu categories. Use Shadcn Tabs but strip default background. Active tab gets a gold underline or text color change.",
+    "modal": "For product details. Use Shadcn Dialog. Custom styling: dark background, 1px border, large hero image inside the modal, ingredient lists.",
+    "sticky_bar": "Mobile only. Fixed bottom-0 w-full glassmorphism background. 3 equal-width buttons (Menu, Location, Order) with Phosphor icons."
+  },
+  "motion": {
+    "intro": "A single small gold dot center screen. It grows, morphs into 'ONE DOT' logo, then 'Find your moment.' fades in. Afterwards, the hero section reveals.",
+    "scroll": "Use Framer Motion for scroll reveals (fade up, slow). Recommend Lenis for smooth momentum scrolling.",
+    "micro": "Hovering images slowly scales them up (scale-105) within an overflow-hidden container. Star rating pulses subtly."
+  },
+  "media": {
+    "icons_library": "@phosphor-icons/react (Weight: 'light' or 'thin' for elegance)",
+    "images": {
+      "hero": {
+        "url": "https://images.unsplash.com/photo-1549035975-7ca0d2ce5033?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwxfHxkYXJrJTIwY2luZW1hdGljJTIwY29mZmVlJTIwY3VwJTIwZXNwcmVzc28lMjBnb2xkfGVufDB8fHx8MTc4NjUyMzg2Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "White and gold teacup with dark cinematic vibe."
+      },
+      "signature_1": {
+        "url": "https://images.unsplash.com/photo-1764361276489-79b17d9a8782?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwyfHxkYXJrJTIwY2luZW1hdGljJTIwY29mZmVlJTIwY3VwJTIwZXNwcmVzc28lMjBnb2xkfGVufDB8fHx8MTc4NjUyMzg2Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Overturned cup with steam."
+      },
+      "signature_2": {
+        "url": "https://images.unsplash.com/photo-1762521062351-90612528d811?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHwzfHxkYXJrJTIwY2luZW1hdGljJTIwY29mZmVlJTIwY3VwJTIwZXNwcmVzc28lMjBnb2xkfGVufDB8fHx8MTc4NjUyMzg2Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Coffee capsule with red and gold stripes."
+      },
+      "barista": {
+        "url": "https://images.unsplash.com/photo-1580644043501-627f569f7e25?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwzfHxsdXh1cnklMjBkYXJrJTIwbW9vZHklMjBjb2ZmZWUlMjByb2FzdGVyeSUyMGJhcmlzdGF8ZW58MHx8fHwxNzg2NTIzODY2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Barista working in a dark setting."
+      },
+      "menu_hot": {
+        "url": "https://images.unsplash.com/photo-1502208641-6f4169d01578?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1Nzh8MHwxfHNlYXJjaHw0fHxkYXJrJTIwY2luZW1hdGljJTIwY29mZmVlJTIwY3VwJTIwZXNwcmVzc28lMjBnb2xkfGVufDB8fHx8MTc4NjUyMzg2Nnww&ixlib=rb-4.1.0&q=85",
+        "description": "Clear glass cup on espresso machine."
+      },
+      "menu_cold": {
+        "url": "https://images.unsplash.com/photo-1642647391072-6a2416f048e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwyfHxpY2VkJTIwY29mZmVlJTIwZGFyayUyMGJhY2tncm91bmR8ZW58MHx8fHwxNzg2NTIzODc0fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Iced coffee in a tall glass."
+      },
+      "menu_matcha": {
+        "url": "https://images.pexels.com/photos/14704657/pexels-photo-14704657.jpeg",
+        "description": "Matcha latte with swan latte art."
+      },
+      "menu_dessert": {
+        "url": "https://images.unsplash.com/photo-1769434129087-52fbe83d3d00?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1ODh8MHwxfHNlYXJjaHw0fHxnb3VybWV0JTIwY2hvY29sYXRlJTIwZGVzc2VydCUyMGRhcmslMjBwbGF0ZXxlbnwwfHx8fDE3ODIwOTU2NzF8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Chocolate cakes on a dark plate."
+      }
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure text over images has sufficient contrast. Use gradient overlays (from-black/70 to-transparent) if text must go over a busy image part.",
+    "testing": "All interactive elements MUST have data-testid attributes."
+  },
+  "instructions_to_main_agent": [
+    "Build the application using React and TailwindCSS. Follow this JSON strictly.",
+    "Use Framer Motion for the initial Dot-to-Logo animation. Cover the viewport, dot scales up, logo fades in, then screen transitions out.",
+    "Implement bilingual support. Use a state or context for English/Arabic, and toggle the `dir` attribute on the HTML or main container (`ltr` / `rtl`). Use appropriate Arabic fonts for `rtl`.",
+    "Create the separate Admin Dashboard. It should have a login screen and simple protected routes to manage the menu items. Use a dense grid layout for the admin.",
+    "Use Phosphor icons for all icons.",
+    "Do not center everything. Align text to the left/right depending on RTL/LTR.",
+    "For the Mobile Sticky Bar, fix it to the bottom on md and smaller screens. Hide it on desktop.",
+    "Make the WhatsApp button prominent in the Order section, linking to 'https://wa.me/...'",
+    "Add 'data-testid' to all buttons, tabs, and form inputs."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not use generic, centered layouts, or simplistic gradients.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur).",
+    "You MUST NOT apply universal transition (e.g., transition: all). Add transitions for specific interactive elements.",
+    "You MUST NOT center align the app container in global CSS.",
+    "Always use modern button styles like pill-shaped, or sharp button with interaction animations.",
+    "Every interaction needs micro-animations - hover states, transitions, parallax effects, and entrance animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "NEVER use AI assistant Emoji characters like 🤖🧠💭💡🔮🎯 for icons.",
+    "Prioritize using pre-existing components from src/components/ui when applicable.",
+    "Use sonner for toasts (located in /app/src/components/ui/sonner.tsx, if available)."
+  ]
+}
