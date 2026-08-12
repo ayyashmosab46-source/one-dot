@@ -40,6 +40,10 @@ export default function ProductModal({ item, onClose, settings }) {
 
           <p className="mt-4 text-dot-gray leading-relaxed">{pick(item.desc_en, item.desc_ar)}</p>
 
+          {item.calories && (
+            <p className="mt-3 text-xs tracking-[0.15em] uppercase text-dot-muted">{item.calories} {lang === "ar" ? "سعرة حرارية" : "Calories"}</p>
+          )}
+
           {pick(item.ingredients_en, item.ingredients_ar) && (
             <div className="mt-6">
               <p className="text-xs tracking-[0.25em] uppercase text-dot-gold mb-2">{t(STRINGS.menu.ingredients)}</p>

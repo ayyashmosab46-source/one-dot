@@ -5,11 +5,11 @@ import { api, formatApiErrorDetail } from "../lib/api";
 import { useAuth } from "../context/AuthContext";
 import { Plus, PencilSimple, Trash, SignOut, ForkKnife, Gear, X } from "@phosphor-icons/react";
 
-const CATEGORIES = ["Signature Drinks", "Hot Coffee", "Cold Coffee", "Matcha", "Non-Coffee", "Desserts", "Breakfast"];
+const CATEGORIES = ["Hot", "Cold", "Drip Coffee", "Mojito"];
 
 const EMPTY = {
   name_en: "", name_ar: "", desc_en: "", desc_ar: "", ingredients_en: "", ingredients_ar: "",
-  price: 0, category: "Hot Coffee", image: "", options: [], addons: [],
+  calories: "", price: 0, category: "Hot", image: "", options: [], addons: [],
   is_signature: false, signature_no: "", order: 0, available: true,
 };
 
@@ -193,6 +193,7 @@ export default function Admin() {
                 </select>
               </Field>
               <Field label="Price (SAR)"><input data-testid="edit-price" type="number" className={inputCls} value={editing.price} onChange={(e) => setEditing({ ...editing, price: e.target.value })} /></Field>
+              <div className="col-span-2"><Field label="Calories"><input className={inputCls} value={editing.calories} onChange={(e) => setEditing({ ...editing, calories: e.target.value })} placeholder="e.g. 217" /></Field></div>
               <div className="col-span-2"><Field label="Image URL"><input data-testid="edit-image" className={inputCls} value={editing.image} onChange={(e) => setEditing({ ...editing, image: e.target.value })} /></Field></div>
               <div className="col-span-2"><Field label="Description (EN)"><textarea className={`${inputCls} h-20`} value={editing.desc_en} onChange={(e) => setEditing({ ...editing, desc_en: e.target.value })} /></Field></div>
               <div className="col-span-2"><Field label="Description (AR)"><textarea className={`${inputCls} h-20`} dir="rtl" value={editing.desc_ar} onChange={(e) => setEditing({ ...editing, desc_ar: e.target.value })} /></Field></div>

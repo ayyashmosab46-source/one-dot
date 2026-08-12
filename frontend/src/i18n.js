@@ -27,13 +27,10 @@ export const STRINGS = {
     soldOut: { en: "Sold out", ar: "غير متوفر" },
   },
   categories: {
-    "Signature Drinks": { en: "Signature", ar: "المميزة" },
-    "Hot Coffee": { en: "Hot Coffee", ar: "قهوة ساخنة" },
-    "Cold Coffee": { en: "Cold Coffee", ar: "قهوة باردة" },
-    "Matcha": { en: "Matcha", ar: "ماتشا" },
-    "Non-Coffee": { en: "Non-Coffee", ar: "بدون قهوة" },
-    "Desserts": { en: "Desserts", ar: "حلويات" },
-    "Breakfast": { en: "Breakfast", ar: "فطور" },
+    "Hot": { en: "Hot", ar: "ساخنة" },
+    "Cold": { en: "Cold", ar: "باردة" },
+    "Drip Coffee": { en: "Drip Coffee", ar: "قهوة مقطّرة" },
+    "Mojito": { en: "Mojito", ar: "موهيتو" },
   },
   signature: {
     kicker: { en: "Chapter 02 — Signature", ar: "الفصل ٠٢ — المميزة" },

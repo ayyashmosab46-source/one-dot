@@ -5,7 +5,7 @@ import { useLang } from "../context/LanguageContext";
 import { STRINGS } from "../i18n";
 import { Reveal } from "./Reveal";
 
-const CATEGORY_ORDER = ["Signature Drinks", "Hot Coffee", "Cold Coffee", "Matcha", "Non-Coffee", "Desserts", "Breakfast"];
+const CATEGORY_ORDER = ["Hot", "Cold", "Drip Coffee", "Mojito"];
 
 export default function MenuSection({ items, onSelect }) {
   const { t, lang, pick } = useLang();

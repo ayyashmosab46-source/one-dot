@@ -45,8 +45,9 @@ class MenuItem(BaseModel):
     desc_ar: str = ""
     ingredients_en: str = ""
     ingredients_ar: str = ""
+    calories: str = ""
     price: float = 0
-    category: str = "Hot Coffee"
+    category: str = "Hot"
     image: str = ""
     options: List[MenuOption] = []
     addons: List[MenuOption] = []
@@ -63,8 +64,9 @@ class MenuItemCreate(BaseModel):
     desc_ar: str = ""
     ingredients_en: str = ""
     ingredients_ar: str = ""
+    calories: str = ""
     price: float = 0
-    category: str = "Hot Coffee"
+    category: str = "Hot"
     image: str = ""
     options: List[MenuOption] = []
     addons: List[MenuOption] = []
