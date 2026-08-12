@@ -1,4 +1,4 @@
-import { Dialog, DialogContent } from "./ui/dialog";
+import { Dialog, DialogContent, DialogTitle, DialogDescription } from "./ui/dialog";
 import { X } from "@phosphor-icons/react";
 import { useLang } from "../context/LanguageContext";
 import { STRINGS } from "../i18n";
@@ -23,6 +23,9 @@ export default function ProductModal({ item, onClose, settings }) {
         <button data-testid="product-modal-close" onClick={onClose} className="absolute top-4 right-4 z-10 h-9 w-9 rounded-full bg-black/50 flex items-center justify-center text-dot-cream hover:bg-black/80">
           <X size={18} weight="bold" />
         </button>
+
+        <DialogTitle className="sr-only">{pick(item.name_en, item.name_ar)}</DialogTitle>
+        <DialogDescription className="sr-only">{pick(item.desc_en, item.desc_ar)}</DialogDescription>
 
         <div className="relative h-64 sm:h-80 w-full overflow-hidden">
           <img src={item.image} alt={pick(item.name_en, item.name_ar)} className="h-full w-full object-cover" />
