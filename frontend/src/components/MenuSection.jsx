@@ -12,12 +12,12 @@ export default function MenuSection({ items, onSelect }) {
   const [active, setActive] = useState(null);
 
   const categories = useMemo(() => {
-   const present = CATEGORY_ORDER.filter((c) => items?.some((i) => i.category === c));
+ const present = CATEGORY_ORDER.filter((c) => (Array.isArray(items) ? items.some((i) => i.category === c) : false));  
     return present;
   }, [items]);
 
   const current = active || categories[0];
-  const filtered = items.filter((i) => i.category === current);
+ const filtered = Array.isArray(items) ? items.filter((i) => i.category === current) : [];
 
   return (
     <section id="menu" className="relative py-24 sm:py-32 px-5 sm:px-10 max-w-7xl mx-auto">
