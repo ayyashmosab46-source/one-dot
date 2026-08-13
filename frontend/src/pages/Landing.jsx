@@ -28,7 +28,7 @@ export default function Landing() {
   const [selected, setSelected] = useState(null);
  useEffect(() => {
     setMenu(localMenuItems);
-    api.get("/settings").then((r) => setSettings(r.data)).catch(() => {});
+  setSettings({ title: "One Dot Cafe" });  
   }, []);
 useEffect(() => {
     const lenis = new Lenis({ duration: 1.1, smoothWheel: true });
