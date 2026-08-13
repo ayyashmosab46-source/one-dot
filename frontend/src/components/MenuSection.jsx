@@ -12,7 +12,7 @@ export default function MenuSection({ items, onSelect }) {
   const [active, setActive] = useState(null);
 
   const categories = useMemo(() => {
-    const present = CATEGORY_ORDER.filter((c) => items.some((i) => i.category === c));
+   const present = CATEGORY_ORDER.filter((c) => items?.some((i) => i.category === c));
     return present;
   }, [items]);
 
