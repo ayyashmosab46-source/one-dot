@@ -27,7 +27,8 @@ export default function Landing() {
   const [selected, setSelected] = useState(null);
 
   useEffect(() => {
-    api.get("/menu").then((r) => setMenu(r.data)).catch(() => {});
+  import { localMenuItems } from "../menuData";
+    setMenu(localMenuItems);
     api.get("/settings").then((r) => setSettings(r.data)).catch(() => {});
   }, []);
 
