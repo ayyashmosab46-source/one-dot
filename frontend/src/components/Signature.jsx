@@ -6,7 +6,7 @@ import { Reveal } from "./Reveal";
 export default function Signature({ items, onSelect }) {
   const { t, lang, pick } = useLang();
   const sar = lang === "ar" ? "ر.س" : "SAR";
-  const sigs = items.filter((i) => i.is_signature).slice(0, 4);
+const sigs = Array.isArray(items) ? items.filter((i) => i.category === "Signature" || true) : [];
   if (sigs.length === 0) return null;
 
   return (
