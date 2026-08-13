@@ -1,0 +1,36 @@
+{
+    "HOT": [
+        {"name": "إسبريسو / Espresso", "price": 10, "calories": 3},
+        {"name": "امريكانو / Americano", "price": 12, "calories": 5},
+        {"name": "ماكياتو / Macchiato", "price": 12, "calories": 47},
+        {"name": "كورتادو / Cortado", "price": 13, "calories": 65},
+        {"name": "فلات وايت / Flat white", "price": 14, "calories": 71},
+        {"name": "كابتشينو / Cappuccino", "price": 15, "calories": 79},
+        {"name": "لاتيه / Latte", "price": 16, "calories": 136},
+        {"name": "سبانيش لاتيه / Spanish Latte", "price": 18, "calories": 217},
+        {"name": "كراميل لاتيه / Caramel Latte", "price": 18, "calories": 230},
+        {"name": "وايت موكا / White Mocha", "price": 18, "calories": 190},
+        {"name": "شوكلاتة ساخنه / Hot Chocolate", "price": 20, "calories": 104}
+    ],
+    "COLD": [
+        {"name": "ايس امريكانو / Ice Americano", "price": 12, "calories": 5},
+        {"name": "ايس سبانيش لاتيه / Ice Spanish Latte", "price": 18, "calories": 217},
+        {"name": "ايس وايت موكا / Ice White Mocha", "price": 18, "calories": 190},
+        {"name": "ايس كراميل لاتيه / Ice Caramel Latte", "price": 18, "calories": 230},
+        {"name": "ايس بستاشيو / Ice pistachio", "price": 18, "calories": 485},
+        {"name": "ايس ماتشا لاتيه / Ice Matcha Latte", "price": 19, "calories": 277},
+        {"name": "ايس تشوكلت / Ice Chocolate", "price": 16, "calories": 104}
+    ],
+    "MOJITO": [
+        {"name": "موهيتو باشن فروت / Mojito Passion Fruit", "price": 15, "calories": 179},
+        {"name": "موهيتو مكس بيري / Mix Berry Mojito", "price": 15, "calories": 201},
+        {"name": "كركديه / Roselle", "price": 12, "calories": 104},
+        {"name": "ايس تي خوخ / Peach Iced Tea", "price": 14, "calories": 339}
+    ],
+    "DRIP COFFEE": [
+        {"name": "في 60 / V60", "price": 18, "calories": 3},
+        {"name": "كيمكس / Chemex", "price": 18, "calories": 2},
+        {"name": "قهوة اليوم صغير / Coffee Of The Day", "price": 8, "calories": 3},
+        {"name": "قهوة اليوم كبير / Coffee Of The Day", "price": 10, "calories": 3}
+    ]
+}
