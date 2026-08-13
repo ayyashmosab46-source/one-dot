@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from "react";
+import { localMenuItems } from "../menuData";
 import Lenis from "lenis";
 import { api } from "../lib/api";
 import { openOrder } from "../lib/order";
@@ -25,14 +26,10 @@ export default function Landing() {
   const [menu, setMenu] = useState([]);
   const [settings, setSettings] = useState(null);
   const [selected, setSelected] = useState(null);
-
-  useEffect(() => {
-  import { localMenuItems } from "../menuData";
+ useEffect(() => {
     setMenu(localMenuItems);
     api.get("/settings").then((r) => setSettings(r.data)).catch(() => {});
   }, []);
-
-  useEffect(() => {
     const lenis = new Lenis({ duration: 1.1, smoothWheel: true });
     let raf;
     const loop = (time) => { lenis.raf(time); raf = requestAnimationFrame(loop); };
