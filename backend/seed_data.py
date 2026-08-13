@@ -27,6 +27,11 @@ IMG = {
     "berry": "https://images.unsplash.com/photo-1600332098294-2e6fefaa6d66?auto=format&fit=crop&w=1200&q=80",
     "roselle": "https://images.unsplash.com/photo-1549383343-ae4a50ca6281?auto=format&fit=crop&w=1200&q=80",
     "peach": "https://images.unsplash.com/photo-1587437430404-61c2024738b6?auto=format&fit=crop&w=1200&q=80",
+    "cookies": "https://images.unsplash.com/photo-1600454252672-d87dc589afdf?auto=format&fit=crop&w=1200&q=80",
+    "tiramisu": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=1200&q=80",
+    "pecan": "https://images.pexels.com/photos/4748401/pexels-photo-4748401.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "cookiescake": "https://customer-assets-cm19k8pv.emergentagent.net/job_find-your-dot/artifacts/zk0sp4j2_WhatsApp%20Image%202026-08-12%20at%207.37.27%20PM.jpeg",
+    "brownies": "https://customer-assets-cm19k8pv.emergentagent.net/job_find-your-dot/artifacts/qx0li4wq_WhatsApp%20Image%202026-08-12%20at%207.37.29%20PM.jpeg",
 }
 
 
