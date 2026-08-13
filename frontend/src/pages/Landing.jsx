@@ -30,6 +30,7 @@ export default function Landing() {
     setMenu(localMenuItems);
     api.get("/settings").then((r) => setSettings(r.data)).catch(() => {});
   }, []);
+useEffect(() => {
     const lenis = new Lenis({ duration: 1.1, smoothWheel: true });
     let raf;
     const loop = (time) => { lenis.raf(time); raf = requestAnimationFrame(loop); };
